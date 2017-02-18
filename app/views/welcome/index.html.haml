@@ -1,0 +1,9 @@
+= render partial: 'menu'
+
+%div{style: 'margin: 10px 0px 0px 30px;'}
+  %a{style: 'color: #bf0c00; font-size: 36px;'} Пътуващото училище
+%div{style: 'margin: 30px 0px 0px 30px;'}
+  %a{style: 'color: #bf0c00; font-size: 22px'} на Подарете книга
+  %img{style: 'float: right'}(src='/images/green_tyres_van.png')
+%div{style: 'margin: 100px 0px 0px 0px;'}
+  = link_to 'Намери урок', '/lessons', style: 'background-color: #bf0c00; color: white; padding: 10px 20px 10px 20px; margin: 30px; border-radius: 10px'
