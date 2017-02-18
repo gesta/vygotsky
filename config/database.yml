@@ -1,0 +1,18 @@
+default: &default
+  adapter: postgresql
+  encoding: utf-8
+  pool: 5
+  timeout: 5000
+  min_messages: warning
+
+development:
+  <<: *default
+  database: vygotsky_development
+
+test:
+  <<: *default
+  database: vygotsky_test
+
+production:
+  <<: *default
+  database: vygotsky_production
