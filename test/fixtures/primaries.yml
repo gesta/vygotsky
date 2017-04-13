@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  length: 2017-04-08 23:49:23
+  section: 
+  description: MyText
+
+two:
+  length: 2017-04-08 23:49:23
+  section: 
+  description: MyText
