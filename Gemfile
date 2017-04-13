@@ -9,6 +9,7 @@ end
 
 gem 'rails', '~> 5.0.1'
 gem 'puma', '~> 3.0'
+gem 'therubyracer'
 gem 'pg'
 gem 'haml', '~> 4.0'
 # Use SCSS for stylesheets
