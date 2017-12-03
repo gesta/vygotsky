@@ -1,0 +1,6 @@
+= render partial: '/welcome/menu'
+
+%div{style: 'margin: 10px 0px 0px 30px;'}
+  - @lessons.each do |lesson|
+    %p{style: 'margin: 40px 0px 30px'}
+      = link_to lesson.name, lesson_path(lesson), style: 'background-color: #f79102; color: white; padding: 10px 20px 10px 20px; border-radius: 10px; font-size: 20px'#, target: '_blank'
