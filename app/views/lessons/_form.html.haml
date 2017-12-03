@@ -1,0 +1,40 @@
+= form_for @lesson do |f|
+  = f.label :group
+  = f.text_field :group
+
+  %h3 Увод
+  = f.fields_for :preface do |preface_form|
+    %p
+      = preface_form.label :length
+      = preface_form.time_select :length
+    %p
+      = preface_form.label :description
+      = preface_form.text_field :description
+
+      = render partial: 'section_form', locals: { form: preface_form }
+
+
+  %h3 Основна част
+  = f.fields_for :primary do |primary_form|
+    %p
+      = primary_form.label :length
+      = primary_form.time_select :length
+    %p
+      = primary_form.label :description
+      = primary_form.text_field :description
+
+      = render partial: 'section_form', locals: { form: primary_form }
+
+  %h3 Упражнение
+  = f.fields_for :exercise do |exercise_form|
+    %p
+      = exercise_form.label :content
+      = exercise_form.text_area :content
+
+  %h3 Домашна работа
+  = f.fields_for :homework do |homework_form|
+    %p
+      = homework_form.label :content
+      = homework_form.text_area :content
+
+  = f.submit
